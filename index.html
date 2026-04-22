@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Denise's Study Spots | Home</title>
+    <meta name="description" content="A Catalog of Study Spots in UC Berkeley" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <img class="logo" src="images/cal_bear_icon-removebg-preview.png" alt="Study Bears logo" />
+      <h1 class="title">Study Bears</h1>
+      <nav class="navbar">
+        <a href="#homepage">Home</a>
+        <a href="#catalog">Study Spots</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    
+    <section id="homepage" class="hero-section">
+      <div class="hero-content">
+        <p class="hero-tag">UC Berkeley Study Spot Guide</p>
+        <h2 class="hero-title">Find your next favorite place to focus.</h2>
+        <p class="hero-text">
+          Explore a student-friendly catalog of study spaces with different vibes,
+          seating options, and campus energy levels.
+        </p>
+        <a class="hero-button" href="#catalog">Ready to Lock In?</a>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog-section">
+      <h2 class="section-title">Study Spot Catalog</h2>
+      <div class="filter-bar">
+        <label>
+          Location
+          <select id="location-filter">
+            <option value="all">All locations</option>
+            <option value="Northside">Northside</option>
+            <option value="Central Campus">Central Campus</option>
+            <option value="East Campus">East Campus</option>
+            <option value="Southside">Southside</option>
+            <option value="Downtown">Downtown</option>
+          </select>
+        </label>
+
+        <label>
+          Noise Level
+          <select id="noise-filter">
+            <option value="all">All noise levels</option>
+            <option value="Quiet">Quiet</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Lively">Lively</option>
+          </select>
+        </label>
+
+        <label>
+          Food / Drinks
+          <select id="food-filter">
+            <option value="all">Any option</option>
+            <option value="yes">Has food or drinks</option>
+            <option value="no">No food or drinks</option>
+          </select>
+        </label>
+
+        <label>
+          Sort By Best For
+          <select id="tag-sort">
+            <option value="default">Default order</option>
+            <option value="deep work">Deep work</option>
+            <option value="socializing">Socializing</option>
+            <option value="coffee chats">Coffee chats</option>
+            <option value="group study">Group study</option>
+            <option value="open late">Open late</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="card-container"></div>
+    </section>
+
+    <div class="card" style="display: none">
+      <div class="card-content">
+        <p class="favorite-badge">Denise Approved!</p>
+        <h2>Study Spot Name</h2>
+        <img src="" alt="Study spot" />
+        <p class="card-description">A Berkeley study spot to explore.</p>
+        <div class="card-details">
+          <p class="card-meta card-location">Location: Central Campus</p>
+          <p class="card-meta card-noise">Noise: Quiet</p>
+          <p class="card-meta card-food">Food & drinks: Yes</p>
+          <p class="card-meta card-outlets">Outlets: Lots</p>
+          <div class="card-tags">
+            <span class="tag">Deep work</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="about" class="info-section">
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
+        <img class="about-image" src="images/IMG_6501.png" alt="About section image" />
+        <p>This site includes some of my tried and true study spots around UC Berkeley. Whether that's grinding for midterms, reading a book, or coffee chatting. If you're in the area, check out my favorites! For students, by a student. Work hard, Play hard! Go Bears!</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Recommend a Study Spot</h2>
+      <p class="contact-text">Know a great Berkeley study place I should add next? Leave a suggestion below!</p>
+      <form class="recommend-form">
+        <input type="text" placeholder="Study spot name" />
+        <input type="text" placeholder="Where is it located?" />
+        <textarea placeholder="Why do you recommend it?"></textarea>
+        <button type="submit">Send Recommendation</button>
+      </form>
+    </section>
+  </body>
+</html>
